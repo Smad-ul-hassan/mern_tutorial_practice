@@ -4,7 +4,6 @@ const { getGoals, setGoals, updateGoals, deleteGoals } = require('../controllers
 
 
 
-//======Old Code======
 // router.post('/', (req, res) => {
 //     // res.send("Hey this is my first Api")
 //     res.json({ message: "Set goals" })
