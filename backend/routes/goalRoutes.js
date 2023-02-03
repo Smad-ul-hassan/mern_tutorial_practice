@@ -21,7 +21,8 @@ const { getGoals, setGoals, updateGoals, deleteGoals } = require('../controllers
 //router.get('/', getGoals)
 //router.post('/', setGoals)
 //you can also write above 2 lines like this if both the requests are same
-router.route('/').get(getGoals).post(setGoals)
+router.route('/').get(getGoals)
+router.post("/", setGoals)
 router.put('/:id', updateGoals)
 router.delete('/:id', deleteGoals)
 module.exports = router

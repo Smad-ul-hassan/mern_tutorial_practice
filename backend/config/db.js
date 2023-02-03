@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 const connectionDb = async () => {
     try {
         const con = await mongoose.connect("mongodb+srv://smad:1234@smad.hldcn0o.mongodb.net/?retryWrites=true&w=majority")
-        mongoose.set('strictQuery', false)
+        mongoose.set('strictQuery', true)
         console.log("this is a connection " + con.connection.host)
     }
     catch (error) {
