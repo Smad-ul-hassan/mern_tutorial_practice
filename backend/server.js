@@ -14,13 +14,13 @@ app.use(bodyParser.json());
 //Get Api
 app.post('/book', (req, res) => {
     const book = req.body;
-
     // Output the book to the console for debugging
     console.log(book);
 
     res.send('Book is added to the database');
 });
 app.use('/api/goals', require('./routes/goalRoutes'))
+app.use('/api/Users', require('./routes/userRoutes'))
 
 
 // app.use(errorHandler);
